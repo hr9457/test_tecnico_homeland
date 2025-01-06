@@ -1,0 +1,17 @@
+version: '3.8'  # Versión de docker-compose
+
+services:
+  mysql:
+    image: mysql:8.0  # Imagen de MySQL
+    container_name: mysql_container  # Nombre del contenedor
+    ports:
+      - "3306:3306"  # Mapea el puerto 3306 del contenedor al host
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234  # Contraseña para el usuario root
+      MYSQL_DATABASE: test_tecnico_homeland  # Base de datos inicial
+    volumes:
+      - mysql_data:/var/lib/mysql  # Volumen para persistir datos
+
+volumes:
+  mysql_data:
+    driver: local
