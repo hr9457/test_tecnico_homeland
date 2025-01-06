@@ -11,9 +11,9 @@
 </head>
 <body>
 <h1>LISTADO DE PRODUCTOS</h1>
-<button type="button" class="btn btn-primary">Agregar</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRegistrar">Agregar</button>
 <!-- modal de registo de datos -->
-<div class="modal" tabindex="-1">
+<div id="modalRegistrar" class="modal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -21,17 +21,39 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">codigo producto</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">nombre producto</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">cantidad</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">precio</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">fechar ingreso</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">fecha vencimiento</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
 
-
+<!-- tabla de registros -->
 <div class="p-5 table-responsive">
     <table class="table">
     <thead class="bg-info">
