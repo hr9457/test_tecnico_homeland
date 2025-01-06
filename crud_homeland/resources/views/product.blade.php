@@ -24,27 +24,33 @@
         <form>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">codigo producto</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="txt_codigo">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">nombre producto</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="txt_nombre">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">cantidad</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="txt_cantidad">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">precio</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="txt_precio">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">fechar ingreso</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="txt_ingreso">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">fecha vencimiento</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="txt_vencimiento">
             </div>
             <button type="submit" class="btn btn-primary">Agregar</button>
         </form>
